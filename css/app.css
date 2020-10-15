@@ -1,0 +1,129 @@
+/*GLOBAL*/
+
+body, section, nav, ul, li {
+    display: flex;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    flex-direction: column;
+}
+
+section {
+    width: 70vw;
+    margin: 1em auto;
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/*HEADER*/
+
+.menu {
+    width: 100vw;
+    height: 15vh;
+
+    background-color: #0d3f8e;
+
+    justify-content: space-around;
+    align-items: center;
+
+    max-font-size: 4vh;
+    text-transform: capitalize;
+}
+
+.menu-bar {
+    justify-content: space-evenly;
+}
+
+.menu-items {
+    padding: 0 0.7em;
+}
+
+.menu-items-link {
+    color: #f1edff;
+}
+
+/* banner */
+
+#banner {
+    height: 40vh;
+
+    margin: 0 auto;
+
+    background-color: #054f6e;
+}
+
+/* MAIN */
+
+#popular {
+    flex-direction: column;
+}
+
+/* basic carousel effect _ TODO: remake a design carousel */
+.popular-list {
+    overflow-y: hidden;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 30vw;
+    height:50vh;
+
+    margin: 0.1em;
+}
+
+.movie-img {
+    max-width: 25vw;
+    height: 30vh;
+
+    border-radius: 1em;
+}
+
+.movie-note {
+    align-self: start;
+    padding: 0.5em;
+
+    background-color: #040c48;
+    color: #f1edff;
+
+    border: 0.2em solid #0ca355;
+    border-radius: 50%;
+
+    font-weight: bolder;
+
+    position: relative;
+    top: -1.5em;
+    left: 1em;
+
+    width: 1.5em;
+}
+
+.movie-date {
+    font-weight: lighter;
+}
